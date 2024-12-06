@@ -80,6 +80,10 @@ DATABASES = {
     }
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-willrhawkin-willbakeebs-t08p1e3tghs.ws-eu117.gitpod.io',
+    'https://*.gitpod.io'
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
