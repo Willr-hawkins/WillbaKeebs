@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-3g&ea(lr9=*xele#nfhcj#6nqh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['willba-keebs.herokuapp.com', '8000-willrhawkin-willbakeebs-t08p1e3tghs.ws-eu117.gitpod.io']
+ALLOWED_HOSTS = ['https://willbakeebs-e8f640fbaa81.herokuapp.com', '8000-willrhawkin-willbakeebs-t08p1e3tghs.ws-eu117.gitpod.io']
 
 
 # Application definition
