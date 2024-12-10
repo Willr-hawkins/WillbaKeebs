@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    color: #F0F2EF !important;
+    background-color: #061B23 !important;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 90px;
+}
+
+.navbar-brand {
+    color: #F0F2EF !important;
+}
+
+.nav-link {
+    color: #F0F2EF !important;
+    font-size: 1.25rem !important;
+}
