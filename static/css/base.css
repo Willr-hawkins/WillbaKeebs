@@ -8,8 +8,9 @@ html, body {
 }
 
 /* Navigation bar */
-.navbar {
-    height: 90px;
+.navbar-collapse {
+    flex-grow: 0 !important;
+    margin-right: 80px;
 }
 
 .navbar-brand {
@@ -19,4 +20,25 @@ html, body {
 .nav-link {
     color: #F0F2EF !important;
     font-size: 1.25rem !important;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #857f74 !important;
+    text-decoration: underline 5px #56282d;
+    transform: scale(1.15);
+}
+
+.navbar-toggler {
+    border: none !important;
+    margin-top: 10px !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler span {
+    color: #F0F2EF;
 }
