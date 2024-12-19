@@ -1,13 +1,21 @@
 html, body {
+    min-height: 100vh !important;
     height: 100%;
     color: #F0F2EF !important;
-    background-color: #061B23 !important;
+    background-color: #857f74 !important;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+
 /* Navigation bar */
+nav {
+    background-color: #061b23;
+}
+
 .navbar-collapse {
     flex-grow: 0 !important;
     margin-right: 80px;
@@ -41,4 +49,146 @@ html, body {
 
 .navbar-toggler span {
     color: #F0F2EF;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: #061b23;
+}
+
+footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .col {
+    min-width: 350px;
+    padding: 0 2rem;
+}
+
+footer .logo {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #857f74;
+    font-weight: 700;
+}
+
+footer h4::after{
+    content: ' ';
+    height: 3px;
+    width: 0px;
+    background-color: #56282d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+footer h4:hover::after {
+    width: 30px;
+}
+
+footer .social a i {
+    color: #F0F2EF;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+
+footer .social a i:hover{
+    transform: scale(1.5);
+    color: #857f74;
+    text-decoration: underline 3px #56282d;
+}
+
+footer .links a {
+    display: block;
+    text-decoration: none;
+    color: #F0F2EF;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+footer .links a:hover {
+    color: #857f74;
+    text-decoration: underline 3px #56282d;
+}
+
+footer .contact-details {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+footer .contact-details i {
+    margin-right: 15px;
+}
+
+footer .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer .form input {
+    background-color: #857f74;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #061b23;
+}
+
+footer .form input::placeholder {
+    color: #061b23;
+}
+
+footer .form button {
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #56282d;
+}
+
+/* Home page */
+
+#home {
+    min-height: 900px;
+    background-color: #857f74;
+}
+
+/* Responsive footer */
+@media(max-width:1081px) {
+    footer .row {
+        flex-direction: column;
+    }
+
+    footer .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
 }
