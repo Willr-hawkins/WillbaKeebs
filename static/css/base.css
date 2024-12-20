@@ -176,8 +176,42 @@ footer .form button {
 /* Home page */
 
 #home {
-    min-height: 900px;
     background-color: #857f74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rotating-circle {
+    margin-left: 90px;
+}
+
+.rotating-circle p {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    animation: effect 8s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#text span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 150px;
+    transform-style: flat;
+    font-weight: 900;
+    font-size: 25px;
+    color: #56282d;
 }
 
 /* Responsive footer */

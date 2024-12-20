@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="home">
+        <div class="col-12 col-lg-6">
+            <div class="rotating-circle">
+                <p id="text"></p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6"></div>
+    </div>
+
+    <script>
+        <!-- JavaScript for rotating circle text -->
+        const str = " WillbaKeebs ~ A Keyboard Blog  ~";
+        const text = document.getElementById("text");
+        window.onload = () => {
+            for (let i = 0; i < str.length; i++) {
+                let span = document.createElement("span");
+                span.innerHTML = str[i];
+                text.appendChild(span);
+                span.style.transform = `rotate(${11*i}deg)`;
+            }
+        };
+    </script>
+{% endblock %}

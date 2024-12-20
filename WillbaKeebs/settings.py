@@ -27,6 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
 ALLOWED_HOSTS = ['willbakeebs-e8f640fbaa81.herokuapp.com', '8000-willrhawkin-willbakeebs-t08p1e3tghs.ws-eu117.gitpod.io']
 
 
