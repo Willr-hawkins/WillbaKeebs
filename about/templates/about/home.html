@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
     <div id="home" class="row">
@@ -7,12 +8,27 @@
                 <p id="text"></p>
             </div>
             <div class="intro-text">
-                <p class="mt-4">Hello. Welcome to my custom mechanical keyboard blog page, 
-                    here I will be sharing my thoughts on up and coming project iwhting the hobbie along with my own personal buids.</p>
+                <p class="mt-4 text-center">Welcome to my custom mechanical keyboard blog! Here, 
+                    I'll be sharing my thoughts on upcoming projects within the hobby, as well as showcasing my personal builds.</p>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <h2>Hello World</h2>
+        <div class="vendors col-12 col-lg-6">
+            <h2>Vendors</h2>
+            <p style="margin-top: 25px; font-size: large;">Check out some of my favourite vendors!</p>
+            <div class="row">
+                <div class="col-4 p-3">
+                    <a href="https://modedesigns.com/" target="_blank"><img class="vendors-logo" src="{% static 'images/mode-logo.webp' %}" alt="Mode Designs Logo"></a>
+                    <p class="text-center mt-2">Mode Designs</p>
+                </div>
+                <div class="col-4 p-3">
+                    <a href="https://www.serpentkeys.co.uk/" target="_blank"><img class="vendors-logo" src="{% static 'images/SerpentKeys-logo.png' %}" alt="SerpentKeys Logo"></a>
+                    <p class="text-center mt-2">SerpentKeys</p>
+                </div>
+                <div class="col-4 p-3">
+                    <a href="https://prototypist.net/" target="_blank"><img class="vendors-logo" src="{% static 'images/prototypist-logo.jpg' %}" alt="Prototypist Logo"></a>
+                    <p class="text-center mt-2">Prototypist</p>
+                </div>
+            </div>
         </div>
     </div>
 

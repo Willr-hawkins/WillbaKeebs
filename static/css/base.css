@@ -238,6 +238,37 @@ footer .form button {
     padding-right: 30px;
 }
 
+.vendors {
+    margin-top: 0;
+    padding-top: 75px;
+    padding-bottom:75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 300px;
+}
+
+.vendors h2 {
+    font-size: 40px;
+    cursor: pointer;
+    color: #56282d;
+    transition: 0.4s;
+    font-weight: 800;
+}
+
+.vendors h2:hover {
+    transform: scale(1.1);
+}
+
+.vendors-logo {
+    height: 110px;
+    width: 110px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
 @media(max-width:1081px) {
 
     /* Responsive Footer */
