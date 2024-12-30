@@ -188,7 +188,7 @@ footer .form button {
     background-color: #061b23;
     margin-top: 0;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +241,7 @@ footer .form button {
 .vendors {
     margin-top: 0;
     padding-top: 75px;
-    padding-bottom:75px;
+    padding-bottom:200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +267,45 @@ footer .form button {
     width: 110px;
     margin-top: 15px;
     border-radius: 6px;
+}
+
+/* About Me Page */
+.about-me {
+    background-color: #857f74;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+
+.about-me-image {
+    height: 550px;
+    object-fit: cover;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.about-me-intro,
+.main-text {
+    margin-top: 165px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.desk-setup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.desk-setup-image {
+    height: 500px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 @media(max-width:1081px) {

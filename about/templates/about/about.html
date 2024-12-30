@@ -1,4 +1,33 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
+    <div class="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img class="about-me-image float-end" src="{% static 'images/about-me-image.jpeg' %}" alt="about me image">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <p class="about-me-intro">Hi, I’m Will, a 20-year-old from the United Kingdom with a passion for tech and creativity. 
+                        While I spend most of my time building my skills as an aspiring Full Stack Developer, 
+                        one of my favorite hobbies is exploring the world of mechanical keyboards.
+                        This blog is my way of sharing that passion—whether it’s customizing layouts, 
+                        reviewing switches, or diving into the nuances of keycaps, I love everything about the tactile experience of a great keyboard. 
+                        Join me as I share tips, tricks, and insights about this incredible hobby.
+                    </p>
+                </div>
+            </div>
+            <div class="desk-setup">
+                <p class="text-center main-text">I’ve always been deeply interested in technology and take great pride in maintaining a clean,
+                     aesthetically pleasing desk setup. It was through this passion for a functional and beautiful workspace that my love for keyboards truly began.
+                </p>
+                <img class="desk-setup-image" src="{% static 'images/desk-setup.jpeg' %}" alt="Desk Setup">
+                <p class="text-center main-text mt-2">I quickly fell in love with custom keyboards and the tight-knit community that surrounds them. 
+                    I was fascinated by the endless possibilities—how different sound profiles can be achieved through various switches, keycaps, 
+                    and designs, as well as how the choice of materials impacts not only the sound but also the typing experience.
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
