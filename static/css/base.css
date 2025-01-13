@@ -308,6 +308,14 @@ footer .form button {
     border-radius: 15px;
 }
 
+.carousel-item img {
+    height: 550px !important;
+    object-fit: cover !important;
+    margin-top: 150px !important;
+    margin-bottom: 50px !important;
+    border-radius: 15px !important;
+}
+
 @media(max-width:1081px) {
 
     /* Responsive Footer */
